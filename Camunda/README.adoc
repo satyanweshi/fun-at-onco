@@ -1,0 +1,32 @@
+How to setup Camunda
+===================
+Varun Sharma <sharma.varunsh@gmail.com>
+v1.0, 2020-07-12
+:doctype: article
+
+[preface]
+Introduction
+-------------
+This file contains instructions on how to setup Camunda. To begin with, follow things need to be installed:
+
+. Camunda Platform - Will use docker for installing the platform. Here is the code
+----------------------
+docker pull camunda/camunda-bpm-platform:latest
+docker run -d --name camunda -p 8080:8080 camunda/camunda-bpm-platform:latest
+----------------------
+. Camunda Modeler
+
+Java Project
+------------
+Command to create the codebase
+
+-----------------------
+mvn archetype:generate -DgroupId=org.camunda.bpm.getstarted -DartifactId=charge-card-worker -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+-----------------------
+
+Comments/Questions
+------------------
+. How will I embed Camunda UI in the code for user tasks?
+. The developers need to understand BPMN 2.0 syntax as well as modeling
+. The people on the business side need to understand business modeling. Nipun had mentioned that there is a BPMN expert working with them.
+.  How will it connect to a database?
