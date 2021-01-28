@@ -1,0 +1,15 @@
+{
+  "name": "xstate-tut",
+  "version": "1.0.0",
+  "description": "XState Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Varun Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "xstate": "^4.13.0"
+  },
+  "type": "module"
+}
